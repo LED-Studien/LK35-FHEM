@@ -6,7 +6,7 @@ upload file into FHEM module directory
 change file owner to FHEM (Gruppe dialout): chown fhem:dialout ./32_LK35.pm
 change permissions: chmod 0775 ./32_LK35.pm
 
-# Definition in fhem.cfg
+## Definition in fhem.cfg
 #for RGBW controller
 
 define Wohnzimmer LK35 RGBW <IP>
@@ -20,7 +20,7 @@ define Kueche LK35 CCT <IP>
 define Flur LK35 DIM <IP>
   
   
-# Add it to TabletUI, i.e.
+## Add it to TabletUI, i.e.
 
 ``` html
   <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
