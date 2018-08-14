@@ -2,25 +2,27 @@
 FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunricher
 
 # Using
-upload file into FHEM module directory
-change file owner to FHEM (Gruppe dialout): chown fhem:dialout ./32_LK35.pm
-change permissions: chmod 0775 ./32_LK35.pm
+upload file into FHEM module directory (usually `/opt/FHEM/fhem/modules`)
+change file owner to FHEM (group dialout): `chown fhem:dialout ./32_LK35.pm`
+change permissions: chmod 0775 `./32_LK35.pm`
 
 ## Definition in fhem.cfg
-#for RGBW controller
+### for RGBW controller
 
-define Wohnzimmer LK35 RGBW <IP>
+`define Wohnzimmer LK35 RGBW <IP>`
   
-#for CCT controller (warmwhite/coldwhite)
+### for CCT controller (warmwhite/coldwhite)
 
-define Kueche LK35 CCT <IP>
+`define Kueche LK35 CCT <IP>`
   
-#for simple dimmer
+### for simple dimmer
 
-define Flur LK35 DIM <IP>
+`define Flur LK35 DIM <IP>`
   
   
-## Add it to TabletUI, i.e.
+## Code snippets to add controls in TabletUI
+
+### RGBW control with sliders
 
 ``` html
   <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
@@ -44,6 +46,10 @@ define Flur LK35 DIM <IP>
   			<div data-type="slider" data-device="Wohnzimmer" class="cell " data-get="W" data-set="W" data-min="0" data-max="255" data-background-color="#777777"  data-color="#FFFFFF"></div> W
   		</div>
   </li>
+```
+
+### RGBW control with color wheel
+``` html
   <li data-row="2" data-col="1" data-sizex="4" data-sizey="2">
   		<header>LK35_1 (RGBW)</header>
   		<div class="cell inline">
@@ -57,6 +63,10 @@ define Flur LK35 DIM <IP>
   			<div data-type="slider" data-device="LK35_1" class="cell " data-get="W" data-set="W" data-min="0" data-max="255" data-background-color="#777777"  data-color="#FFFFFF"></div> W
   		</div>
   </li>
+```
+
+### 4 channel control with sliders
+``` html
   <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
       <header>LK35_1 (4-Kanal)</header>
       <div class="cell inline">
@@ -78,6 +88,10 @@ define Flur LK35 DIM <IP>
         <div data-type="slider" data-device="LK35_1" class="cell " data-get="W" data-set="W" data-min="0" data-max="255" data-background-color="#777777"  data-color="#FFFFFF"></div> 4
       </div>
   </li>
+```
+
+### CCT control with sliders
+```html
   <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
   		<header>KÃ¼che (CCT)</header>
   		<div class="cell inline">
@@ -96,6 +110,11 @@ define Flur LK35 DIM <IP>
   			CW <div data-type="slider" data-device="Kueche" class="cell inline horizontal" data-get="CCT" data-set="CCT" data-min="0" data-max="255" data-background-color="#42a7f4"  data-color="#ffce5b"></div> WW
   		</div>
   </li>
+  ```
+  
+ ### Dim control with slider
+ 
+ ```html
   <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
   		<header>LK35_2 (DIM)</header>
   		<div data-type="switch" data-device="LK35_2" class="cell" data-icon="fa-power-off"></div>
