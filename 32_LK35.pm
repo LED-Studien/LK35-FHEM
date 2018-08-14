@@ -1,7 +1,7 @@
 ##############################################
-# $Id: 24_NETIO_4x.pm 7570 2018-02-18 15:15:44Z oliverschoenefeld $
+# $Id: 32_LK32.pm 7570 2018-08-13 15:15:44Z oliverschoenefeld $
 #
-# maintainer: Elektronikladen Microcomputer ELMICRO GmbH & Co. KG, fhem@elmicro.com
+# maintainer: LED-Studien GmbH, oli@led-studien.de
 #
 
 package main;
