@@ -1,10 +1,11 @@
 # LK35-FHEM
-FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunricher
+FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunricher.
 
-# Using
-upload file into FHEM module directory (usually `/opt/FHEM/fhem/modules`)
-change file owner to FHEM (group dialout): `chown fhem:dialout ./32_LK35.pm`
-change permissions: chmod 0775 `./32_LK35.pm`
+## Installation
+* upload file into FHEM module directory (usually `/opt/fhem/FHEM`)
+* change file owner to FHEM (group dialout): `chown fhem:dialout ./32_LK35.pm`
+* change permissions: `chmod 0775 ./32_LK35.pm`
+* restart fhem service: `sudo service fhem restart`
 
 ## Definition in fhem.cfg
 ### for RGBW controller
@@ -32,7 +33,7 @@ change permissions: chmod 0775 `./32_LK35.pm`
   		</div>
   		<div class="cell inline">
   			<div data-type="slider" data-device='Wohnzimmer' class="cell " data-get="brightness" data-set="dim" data-min="0"  data-max="255" data-background-color="#444444"  data-color="#AAAAAA"></div> H
-          </div>
+                </div>
   		<div class="cell inline">
   			<div data-type="slider" data-device="Wohnzimmer" class="cell " data-get="R" data-set="R" data-min="0" data-max="255" data-background-color="#770000" data-color="#FF0000"></div> R
   		</div>
@@ -57,7 +58,7 @@ change permissions: chmod 0775 `./32_LK35.pm`
   		</div>
   		<div class="cell inline">
   			<div data-type="slider" data-device='LK35_1' class="cell " data-get="brightness" data-set="dim" data-min="0"  data-max="255" data-background-color="#444444"  data-color="#AAAAAA"></div> H
-      </div>
+                </div>
   		<div data-type="colorwheel" data-device='LK35_1' data-get="RGB" data-set="RGB" class="roundIndicator cell inline"></div>
   		<div class="cell inline">
   			<div data-type="slider" data-device="LK35_1" class="cell " data-get="W" data-set="W" data-min="0" data-max="255" data-background-color="#777777"  data-color="#FFFFFF"></div> W
@@ -99,7 +100,7 @@ change permissions: chmod 0775 `./32_LK35.pm`
   		</div>
   		<div class="cell inline">
   			<div data-type="slider" data-device='Kueche' class="cell " data-get="brightness" data-set="dim" data-min="0"  data-max="255" data-background-color="#444444"  data-color="#AAAAAA"></div> H
-      </div>
+                </div>
   		<div class="cell inline">
   			<div data-type="slider" data-device="Kueche" class="cell " data-get="WW" data-set="WW" data-min="0" data-max="255" data-background-color="#ba9643" data-color="#ffce5b"></div> WW
   		</div>
