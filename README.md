@@ -25,6 +25,9 @@ FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunr
 
 ### RGBW control with sliders
 
+![RGBW control with sliders](/TabletUI/RGBW-slider.PNG)
+      
+
 ``` html
   <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
   		<header>Wohnzimmer (RGBW)</header>
@@ -50,6 +53,9 @@ FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunr
 ```
 
 ### RGBW control with color wheel
+
+![RGBW control with sliders](/TabletUI/RGBW-colorwheel.PNG)
+
 ``` html
   <li data-row="2" data-col="1" data-sizex="4" data-sizey="2">
   		<header>LK35_1 (RGBW)</header>
@@ -67,6 +73,9 @@ FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunr
 ```
 
 ### 4 channel control with sliders
+
+![RGBW control with sliders](/TabletUI/4channel.PNG)
+
 ``` html
   <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
       <header>LK35_1 (4-Kanal)</header>
@@ -92,6 +101,9 @@ FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunr
 ```
 
 ### CCT control with sliders
+
+![RGBW control with sliders](/TabletUI/cct.PNG)
+
 ```html
   <li data-row="2" data-col="1" data-sizex="2" data-sizey="2">
   		<header>KÃ¼che (CCT)</header>
@@ -114,6 +126,8 @@ FHEM module to control LK35 Wifi LED-Controller or compatible products from Sunr
   ```
   
  ### Dim control with slider
+ 
+ ![RGBW control with sliders](/TabletUI/DIM.PNG)
  
  ```html
   <li data-row="2" data-col="1" data-sizex="1" data-sizey="2">
